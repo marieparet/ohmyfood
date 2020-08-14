@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Europa";
+  src: url("../assets/fonts/europa-bold-webfont.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Europa";
+  src: url("../assets/fonts/europa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #4aaa95;
+}
+header h1 {
+  color: #fad263;
+  font-family: "Europa";
+  font-weight: bold;
+}
+
+.main-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-section {
+  width: 80%;
+}
+.menu-section .top-section, .menu-section .bottom-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.menu-section .bottom-section {
+  padding: 0 30px 30px 30px;
+}
+.menu-section section {
+  width: 30%;
+  height: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.soon .btn {
+  padding: 10px 35px;
+  border-radius: 15px;
+  background-color: #4aaa95;
+  color: #fad263;
+  font-family: "Europa";
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4aaa95;
+  padding: 15px;
+}
+footer .legal-notice, footer .contact-us {
+  color: #fad263;
+  font-family: "Europa";
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=style.css.map */
