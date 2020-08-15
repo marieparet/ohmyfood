@@ -11,10 +11,10 @@
 header {
   display: flex;
   justify-content: center;
-  background-color: #4aaa95;
+  background-color: #579c88;
 }
 header h1 {
-  color: #fad263;
+  color: #f7ca53;
   font-family: "Europa";
   font-weight: bold;
 }
@@ -25,18 +25,20 @@ header h1 {
   justify-content: space-around;
 }
 
-.menu-section {
+.main-section {
   width: 80%;
 }
-.menu-section .top-section, .menu-section .bottom-section {
+.main-section .main-section__top {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
-.menu-section .bottom-section {
+.main-section .main-section__bottom {
+  display: flex;
+  justify-content: center;
   padding: 0 30px 30px 30px;
 }
-.menu-section section {
+.main-section section {
   width: 30%;
   height: 200px;
   margin-right: 10px;
@@ -65,14 +67,18 @@ header h1 {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: #4aaa95;
+  background-color: #579c88;
   padding: 15px;
 }
 footer .legal-notice, footer .contact-us {
-  color: #fad263;
+  color: #f7ca53;
   font-family: "Europa";
   font-weight: normal;
   font-size: 1.2em;
+}
+footer .contact-us a, footer .contact-us a:visited {
+  text-decoration: none;
+  color: #f7ca53;
 }
 
 /*# sourceMappingURL=style.css.map */

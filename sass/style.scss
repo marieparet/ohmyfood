@@ -1,22 +1,15 @@
-@font-face {
-    font-family:'Europa';
-    src: url("../assets/fonts/europa-bold-webfont.woff") format('woff');
-    font-weight: bold;
-}
+@import "./base/fonts";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
-@font-face {
-    font-family:'Europa';
-    src: url("../assets/fonts/europa-regular-webfont.woff") format('woff');
-    font-weight: normal;
-}
 
 header {
     display : flex;
     justify-content: center;
-    background-color: rgb(74, 170, 149);
+    background-color: $color-primary;
     h1 {
-        color: rgb(250, 210, 99);
-        font-family: 'Europa';
+        color: $color-secondary;
+        font-family: $font-primary;
         font-weight: bold;
     }
 }
@@ -27,15 +20,14 @@ header {
     justify-content: space-around;
 }
 
-.menu-section {
+.main-section {
     width: 80%;
-    .top-section {
-        display: flex;
-        justify-content: center;
+    .main-section__top {
+        @include justify-center;
         padding: 30px;
     }
-    .bottom-section {
-        @extend .top-section;
+    .main-section__bottom {
+        @include justify-center;
         padding: 0 30px 30px 30px;
     }
     section {
@@ -70,16 +62,23 @@ header {
 footer {
     display : flex;
     justify-content: space-between;
-    background-color: rgb(74, 170, 149);
+    background-color: $color-primary;
     padding : 15px;
     .legal-notice {
-        color: rgb(250, 210, 99);
-        font-family: 'Europa';
+        color: $color-secondary;
+        font-family: $font-primary;
         font-weight: normal;
         font-size: 1.2em;
     }
     .contact-us {
         @extend .legal-notice;
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+            &:visited {
+                @extend a;
+            }
+        }
     }
 }
 
