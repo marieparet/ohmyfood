@@ -1,7 +1,8 @@
-@import "./base/fonts";
-@import "./base/base";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./base/fonts";
+@import "./base/typography";
+@import "./base/base";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./components/buttons";

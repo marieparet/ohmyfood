@@ -8,11 +8,5 @@ footer {
     }
     .contact-us {
         @include footer-sections;
-        a {
-            @include contact-link;
-            &:visited {
-                @include contact-link;
-            }
-        }
     }
 }

@@ -8,6 +8,11 @@
   src: url("../assets/fonts/europa-regular-webfont.woff") format("woff");
   font-weight: normal;
 }
+a, a:visited {
+  text-decoration: none;
+  color: #f7ca53;
+}
+
 .main-bloc {
   display: flex;
   flex-wrap: wrap;
@@ -31,14 +36,6 @@ footer .contact-us {
   font-family: "Europa";
   font-weight: normal;
   font-size: 1.2em;
-}
-footer .contact-us a {
-  text-decoration: none;
-  color: #f7ca53;
-}
-footer .contact-us a:visited {
-  text-decoration: none;
-  color: #f7ca53;
 }
 
 header {
