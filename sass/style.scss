@@ -1,29 +1,15 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+
 @import "./base/fonts";
 @import "./base/typography";
 @import "./base/base";
+
 @import "./layout/footer";
 @import "./layout/header";
+
 @import "./components/buttons";
 @import "./components/menu";
 @import "./components/icon";
+
 @import "./pages/legal";
-
-
-.main-section {
-    width: 80%;
-    .top-main-section {
-        @include justify-center;
-        padding: 30px;
-    }
-    .bottom-main-section {
-        @include justify-center;
-        padding: 0 30px 30px 30px;
-    }
-}
-
-.card {
-    @include card;
-    
-}

@@ -1,9 +1,10 @@
 .soon-btn {
     display :flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     .btn {
         padding: 10px 35px;
+        margin-bottom: 15px;
         border-radius: 15px;
         background-color: $color-primary;
         color: $color-secondary;

@@ -1,22 +1,29 @@
-@mixin justify-center {
-    display: flex;
-    justify-content: center;
-}
 
 @mixin footer-sections {
     color: $color-secondary;
     font-weight: normal;
     font-size: 1.2em;
+    padding: 0 20px;
 }
 
-@mixin card {
-    min-height: 400px;
-    width: 40%;
-    margin-right: 20px;
-    margin-left: 20px;
-    box-shadow: 0 0 6px #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+/* Responsive */
+
+@mixin media-small {
+    @media screen and (max-width: map-get($breakpoints, small)) {
+      @content;
+    }
+  }
+  
+  @mixin media-medium {
+    @media screen and (max-width: map-get($breakpoints, medium)) {
+      @content;
+    }
+  }
+  
+  @mixin media-large {
+    @media screen and (max-width: map-get($breakpoints, large)) {
+      @content;
+    }
+  }
 

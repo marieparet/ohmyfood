@@ -1,3 +1,5 @@
+/* Map pour le responsive */
+/* Responsive */
 @font-face {
   font-family: "Europa";
   src: url("../assets/fonts/europa-bold-webfont.woff") format("woff");
@@ -22,27 +24,36 @@ body {
   margin: 0;
 }
 
-.main-bloc {
+main {
+  width: 100%;
+  padding: 20px 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 footer {
   display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   justify-content: space-between;
+  align-items: center;
   background-color: #579c88;
-  padding: 15px;
+  width: 100%;
+  height: 60px;
 }
 footer .legal-notice {
   color: #f7ca53;
   font-weight: normal;
   font-size: 1.2em;
+  padding: 0 20px;
 }
 footer .contact-us {
   color: #f7ca53;
   font-weight: normal;
   font-size: 1.2em;
+  padding: 0 20px;
 }
 
 header {
@@ -58,16 +69,29 @@ header h1 {
 .soon-btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 .soon-btn .btn {
   padding: 10px 35px;
+  margin-bottom: 15px;
   border-radius: 15px;
   background-color: #579c88;
   color: #f7ca53;
   font-family: "Europa";
   font-weight: normal;
   font-size: 1.4em;
+}
+
+.card {
+  min-height: 400px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 6px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
 }
 
 .legal {
@@ -79,31 +103,6 @@ header h1 {
 }
 .legal .article {
   font-weight: bold;
-}
-
-.main-section {
-  width: 80%;
-}
-.main-section .top-main-section {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-}
-.main-section .bottom-main-section {
-  display: flex;
-  justify-content: center;
-  padding: 0 30px 30px 30px;
-}
-
-.card {
-  min-height: 400px;
-  width: 40%;
-  margin-right: 20px;
-  margin-left: 20px;
-  box-shadow: 0 0 6px #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
