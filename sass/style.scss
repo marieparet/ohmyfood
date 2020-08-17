@@ -1,84 +1,27 @@
 @import "./base/fonts";
+@import "./base/base";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./components/buttons";
+@import "./components/menu";
+@import "./components/icon";
 
-
-header {
-    display : flex;
-    justify-content: center;
-    background-color: $color-primary;
-    h1 {
-        color: $color-secondary;
-        font-family: $font-primary;
-        font-weight: bold;
-    }
-}
-
-.main-bloc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .main-section {
     width: 80%;
-    .main-section__top {
+    .top-main-section {
         @include justify-center;
         padding: 30px;
     }
-    .main-section__bottom {
+    .bottom-main-section {
         @include justify-center;
         padding: 0 30px 30px 30px;
     }
-    section {
-        width: 30%;
-        height: 200px;
-        margin-right: 10px;
-        margin-left: 10px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
-
-.soon {
-    display :flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    .btn {
-        padding: 10px 35px;
-        border-radius: 15px;
-        background-color: #4aaa95;
-        color: #fad263;
-        font-family: "Europa";
-        font-weight: normal;
-        font-size: 1.4em;
-    }   
+.card {
+    @include card;
+    
 }
-
-
-footer {
-    display : flex;
-    justify-content: space-between;
-    background-color: $color-primary;
-    padding : 15px;
-    .legal-notice {
-        color: $color-secondary;
-        font-family: $font-primary;
-        font-weight: normal;
-        font-size: 1.2em;
-    }
-    .contact-us {
-        @extend .legal-notice;
-        a {
-            text-decoration: none;
-            color: $color-secondary;
-            &:visited {
-                @extend a;
-            }
-        }
-    }
-}
-

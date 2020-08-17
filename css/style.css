@@ -8,6 +8,39 @@
   src: url("../assets/fonts/europa-regular-webfont.woff") format("woff");
   font-weight: normal;
 }
+.main-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #579c88;
+  padding: 15px;
+}
+footer .legal-notice {
+  color: #f7ca53;
+  font-family: "Europa";
+  font-weight: normal;
+  font-size: 1.2em;
+}
+footer .contact-us {
+  color: #f7ca53;
+  font-family: "Europa";
+  font-weight: normal;
+  font-size: 1.2em;
+}
+footer .contact-us a {
+  text-decoration: none;
+  color: #f7ca53;
+}
+footer .contact-us a:visited {
+  text-decoration: none;
+  color: #f7ca53;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -19,66 +52,44 @@ header h1 {
   font-weight: bold;
 }
 
-.main-bloc {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.main-section {
-  width: 80%;
-}
-.main-section .main-section__top {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-}
-.main-section .main-section__bottom {
-  display: flex;
-  justify-content: center;
-  padding: 0 30px 30px 30px;
-}
-.main-section section {
-  width: 30%;
-  height: 200px;
-  margin-right: 10px;
-  margin-left: 10px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.soon {
+.soon-btn {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
 }
-.soon .btn {
+.soon-btn .btn {
   padding: 10px 35px;
   border-radius: 15px;
-  background-color: #4aaa95;
-  color: #fad263;
+  background-color: #579c88;
+  color: #f7ca53;
   font-family: "Europa";
   font-weight: normal;
   font-size: 1.4em;
 }
 
-footer {
+.main-section {
+  width: 80%;
+}
+.main-section .top-main-section {
   display: flex;
-  justify-content: space-between;
-  background-color: #579c88;
-  padding: 15px;
+  justify-content: center;
+  padding: 30px;
 }
-footer .legal-notice, footer .contact-us {
-  color: #f7ca53;
-  font-family: "Europa";
-  font-weight: normal;
-  font-size: 1.2em;
+.main-section .bottom-main-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px 30px 30px;
 }
-footer .contact-us a, footer .contact-us a:visited {
-  text-decoration: none;
-  color: #f7ca53;
+
+.card {
+  min-height: 400px;
+  width: 40%;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0 6px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

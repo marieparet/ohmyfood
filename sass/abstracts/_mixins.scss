@@ -2,3 +2,27 @@
     display: flex;
     justify-content: center;
 }
+
+@mixin footer-sections {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+@mixin contact-link {
+    text-decoration: none;
+    color: $color-secondary;
+}
+
+@mixin card {
+    min-height: 400px;
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 0 6px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

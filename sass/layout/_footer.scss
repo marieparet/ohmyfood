@@ -1,0 +1,18 @@
+footer {
+    display : flex;
+    justify-content: space-between;
+    background-color: $color-primary;
+    padding : 15px;
+    .legal-notice {
+        @include footer-sections;
+    }
+    .contact-us {
+        @include footer-sections;
+        a {
+            @include contact-link;
+            &:visited {
+                @include contact-link;
+            }
+        }
+    }
+}

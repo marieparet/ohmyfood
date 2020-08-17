@@ -1,0 +1,10 @@
+header {
+    display : flex;
+    justify-content: center;
+    background-color: $color-primary;
+    h1 {
+        color: $color-secondary;
+        font-family: $font-primary;
+        font-weight: bold;
+    }
+}
