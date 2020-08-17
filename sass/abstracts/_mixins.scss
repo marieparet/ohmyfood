@@ -5,14 +5,8 @@
 
 @mixin footer-sections {
     color: $color-secondary;
-    font-family: $font-primary;
     font-weight: normal;
     font-size: 1.2em;
-}
-
-@mixin contact-link {
-    text-decoration: none;
-    color: $color-secondary;
 }
 
 @mixin card {

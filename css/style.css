@@ -8,9 +8,18 @@
   src: url("../assets/fonts/europa-regular-webfont.woff") format("woff");
   font-weight: normal;
 }
+body {
+  font-family: "Europa", "Roboto";
+  color: #579c88;
+}
+
 a, a:visited {
   text-decoration: none;
   color: #f7ca53;
+}
+
+body {
+  margin: 0;
 }
 
 .main-bloc {
@@ -27,13 +36,11 @@ footer {
 }
 footer .legal-notice {
   color: #f7ca53;
-  font-family: "Europa";
   font-weight: normal;
   font-size: 1.2em;
 }
 footer .contact-us {
   color: #f7ca53;
-  font-family: "Europa";
   font-weight: normal;
   font-size: 1.2em;
 }
@@ -45,7 +52,6 @@ header {
 }
 header h1 {
   color: #f7ca53;
-  font-family: "Europa";
   font-weight: bold;
 }
 
@@ -62,6 +68,17 @@ header h1 {
   font-family: "Europa";
   font-weight: normal;
   font-size: 1.4em;
+}
+
+.legal {
+  color: black;
+  margin: 8px;
+}
+.legal h2, .legal .effect {
+  text-align: center;
+}
+.legal .article {
+  font-weight: bold;
 }
 
 .main-section {
