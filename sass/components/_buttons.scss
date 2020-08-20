@@ -1,15 +1,15 @@
 .soon-btn {
-    display :flex;
-    justify-content: center;
-    padding-bottom: 80px;
-    .btn {
-        padding: 10px 35px;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        background-color: $color-primary;
-        color: $color-secondary;
-        font-family: "Europa";
-        font-weight: normal;
-        font-size: 1.4em;
-    }   
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  .btn {
+    padding: 10px 35px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    font-family: "Europa";
+    font-weight: normal;
+    font-size: 1.8rem;
+  }
 }

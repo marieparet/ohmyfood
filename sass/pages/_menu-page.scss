@@ -1,94 +1,97 @@
 .menu {
-    @each $name, $theme in $menu-themes {
-      &--#{$name} {
-        background-color: map-get($theme, bg);
-    
-        h2 {
-          font-family: map-get($theme, title-family);
-          background-image: linear-gradient(to right, map-get($theme, title-color-start), map-get($theme, title-color-stop));
-          color: transparent;
-          background-clip: text;
-          font-size: 2.9rem;
-          margin: 0;
-        }
-  
-        h3 {
-          font-family: "Segoe Print";
-          font-weight: bold;
-          margin: 40px 0;
-          font-size: 1.7rem;
-        }
+  @each $name, $theme in $menu-themes {
+    &--#{$name} {
+      background-color: map-get($theme, bg);
+
+      h2 {
+        font-family: map-get($theme, title-family);
+        background-image: linear-gradient(
+          to right,
+          map-get($theme, title-color-start),
+          map-get($theme, title-color-stop)
+        );
+        color: transparent;
+        background-clip: text;
+        font-size: 3.3rem;
+        margin: 0;
+      }
+
+      h3 {
+        font-family: "Segoe Print";
+        font-weight: bold;
+        margin: 40px 0;
+        font-size: 1.7rem;
       }
     }
+  }
 
-    &--main {
-        padding-top: 0;
-    }
+  &--main {
+    padding-top: 0;
+  }
 
-    &__top {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 50px;
-      i {
-        font-size: 5rem;
-      }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+    .icon-music {
+      width: 95px;
     }
-  
-    &__header {
-        h1 {
-            color: black;
-            font-size: 2rem;
-            text-align: center;
-        }
+  }
+
+  &__header {
+    h1 {
+      color: black;
+      font-size: 2.6rem;
+      text-align: center;
     }
-  
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        box-shadow: 0 0 6px #ccc;
-        margin: 0 auto 60px auto;
-    }
-  
-    &__content {
-        width: 85%;
-        text-align: center;
-        color: black;
-        margin-bottom: 30px;
-  
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0 0 6px #ccc;
+    margin: 0 auto 60px auto;
+  }
+
+  &__content {
+    width: 85%;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+
     .underline {
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            height: 2px;
-            width: 0;
-            left: 0;
-            transition: width 1s ease;
-            background-color: black;
-        }
-        &:hover::after {
-            width: 100%;
-        }
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 0;
+        left: 0;
+        transition: width 1s ease;
+        background-color: black;
+      }
+      &:hover::after {
+        width: 100%;
+      }
     }
-  
+
     p {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       font-size: 1.2rem;
-      font-family: 'Segoe Print';
+      font-family: "Segoe Print";
       margin: 20px;
-  
+
       .price {
         font-size: 1.5rem;
         padding-left: 20px;
       }
     }
-
   }
 }

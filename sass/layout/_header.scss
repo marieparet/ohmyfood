@@ -1,9 +1,10 @@
 header {
-    display : flex;
-    justify-content: center;
-    background-color: $color-primary;
-    h1 {
-        color: $color-secondary;
-        font-weight: bold;
-    }
+  display: flex;
+  justify-content: center;
+  background-color: $color-primary;
+  h1 {
+    color: $color-secondary;
+    font-weight: bold;
+    font-size: 3rem;
+  }
 }

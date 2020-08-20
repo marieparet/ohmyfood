@@ -1,13 +1,17 @@
 .menu {
-    &__bottom {
-        display: flex;
-        align-items: center;
-        padding-bottom: 50px;
-        font-family: "Devonshire", "cursive";
-        font-size: 2rem;
-        color: #3A0912;
-        i {
-            margin-right: 20px;
-        }
-      }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    padding-bottom: 45px;
+    font-family: "Devonshire", "cursive";
+    font-size: 2rem;
+    color: #3a0912;
+    p {
+      font-size: 2.5rem;
+    }
+    .icon-music {
+      margin-right: 20px;
+      width: 50px;
+    }
+  }
 }

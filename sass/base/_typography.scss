@@ -1,9 +1,10 @@
 body {
-    font-family: $font-primary, 'Roboto';
-    color: $color-primary;
-  }
+  font-family: $font-primary, "Roboto";
+  color: $color-primary;
+}
 
-a, a:visited {
-    text-decoration: none;
-    color: $color-secondary;
+a,
+a:visited {
+  text-decoration: none;
+  color: $color-secondary;
 }

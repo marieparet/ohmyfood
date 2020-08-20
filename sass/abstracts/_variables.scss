@@ -1,8 +1,12 @@
 $color-primary: rgb(87, 156, 136);
-$color-secondary:rgb(247, 202, 83);
+$color-secondary: rgb(247, 202, 83);
 
-$font-primary: 'Europa';
+$font-primary: "Europa";
 
 /* Map pour le responsive */
 
-$breakpoints: (small: 600px, medium: 900px, large: 1200px);
+$breakpoints: (
+  small: 600px,
+  medium: 900px,
+  large: 1200px,
+);

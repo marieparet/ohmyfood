@@ -1,78 +1,111 @@
 .card {
-    min-height: 400px;
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 0 6px #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 280px;
+  min-height: 400px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 6px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
 }
+
 $menu-themes: (
-    la-note-enchantee: (
-      title-family: ('Devonshire', cursive),
-      title-color-start: #3A0912,
-      title-color-stop: #3A0912,
-      text-family: ('Sriracha', cursive),
-      text-color: #3A0912,
-      bg: #FCDFDB,
+  la-note-enchantee: (
+    title-family: (
+      "Devonshire",
+      cursive,
     ),
-    le-chic-a-la-francaise: (
-      title-family: ('Croissant One', cursive),
-      title-color-start: #C77412,
-      title-color-stop: #905BFD,
-      text-family: ('Noto Serif', serif),
-      text-color: #C77412,
-      bg: #FFF5FE,
+    title-color-start: #3a0912,
+    title-color-stop: #3a0912,
+    text-family: (
+      "Sriracha",
+      cursive,
     ),
-    le-delice-des-papilles: (
-      title-family: ('Parisienne', cursive),
-      title-color-start: #0431DF,
-      title-color-stop: #0E88FB,
-      text-family: ('Segoe Print', cursive),
-      text-color: #0E88FB,
-      bg: #F9F9F9,
+    text-color: #3a0912,
+    bg: #fcdfdb,
+  ),
+  le-chic-a-la-francaise: (
+    title-family: (
+      "Croissant One",
+      cursive,
     ),
-    la-palette-du-gout: (
-      title-family: ('Kaushan Script', cursive),
-      title-color-start: #72BF56,
-      title-color-stop: #BFFF7E,
-      text-family: ('Segoe Print', cursive),
-      text-color: #72BF56,
-      bg: #FDFFFD,
-    )
-  );
-  
-  .menus {
-    @each $name, $theme in $menu-themes {
-      &--#{$name} {
-        background-color: map-get($theme, bg);
-    
-        h2 {
-          font-family: map-get($theme, title-family);
-          background-image: linear-gradient(to right, map-get($theme, title-color-start), map-get($theme, title-color-stop));
-          color: transparent;
-          background-clip: text;
-          margin-bottom: 20px;
-          font-size: 1.7rem;
-        }
-    
-        p {
-          font-family: map-get($theme, text-family);
-          color: map-get($theme, text-color);
-          font-size: 1.2rem;
-        }
+    title-color-start: #c77412,
+    title-color-stop: #905bfd,
+    text-family: (
+      "Noto Serif",
+      serif,
+    ),
+    text-color: #c77412,
+    bg: #fff5fe,
+  ),
+  le-delice-des-papilles: (
+    title-family: (
+      "Parisienne",
+      cursive,
+    ),
+    title-color-start: #0431df,
+    title-color-stop: #0e88fb,
+    text-family: (
+      "Segoe Print",
+      cursive,
+    ),
+    text-color: #0e88fb,
+    bg: #f9f9f9,
+  ),
+  la-palette-du-gout: (
+    title-family: (
+      "Kaushan Script",
+      cursive,
+    ),
+    title-color-start: #72bf56,
+    title-color-stop: #bfff7e,
+    text-family: (
+      "Segoe Print",
+      cursive,
+    ),
+    text-color: #72bf56,
+    bg: #fdfffd,
+  ),
+);
+
+.menus {
+  @each $name, $theme in $menu-themes {
+    &--#{$name} {
+      background-color: map-get($theme, bg);
+
+      h2 {
+        font-family: map-get($theme, title-family);
+        background-image: linear-gradient(
+          to right,
+          map-get($theme, title-color-start),
+          map-get($theme, title-color-stop)
+        );
+        color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        font-size: 1.7rem;
       }
-  
-      &__box-content {
-          text-align: center;
-          padding: 25px;
-          transition: transform 500ms ease-in-out;
-          &:hover {
-          transform: scale(1.3);
-          opacity: .6;
-          }
+
+      #chic-title {
+        font-size: 1.3rem;
       }
+
+      p {
+        font-family: map-get($theme, text-family);
+        color: map-get($theme, text-color);
+        font-size: 1.8rem;
+      }
+    }
+
+    &__box-content {
+      text-align: center;
+      padding: 15px;
+      transition: transform 500ms ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+        opacity: 0.6;
+      }
+    }
   }
-  }  
+}
