@@ -12,5 +12,6 @@
 
 @font-face {
     font-family: 'Segoe Print';
-    src: url("../assets/fonts/segoe-print.woff");
+    src: url("../assets/fonts/segoe-print.woff") format('woff');
+    font-weight: normal;
 }
