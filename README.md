@@ -3,11 +3,9 @@
 
 ## Getting started
 
-```npm install
-
-npm run sass
-npm run sass-watch
-npm run prefix
+```
+npm install
+npm start
 ```
 
 ## What is this project ?
