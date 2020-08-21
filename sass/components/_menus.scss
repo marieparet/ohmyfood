@@ -85,6 +85,7 @@ $menu-themes: (
         background-clip: text;
         margin-bottom: 20px;
         font-size: 1.7rem;
+        font-weight: 100;
       }
 
       #chic-title {
@@ -94,7 +95,8 @@ $menu-themes: (
       p {
         font-family: map-get($theme, text-family);
         color: map-get($theme, text-color);
-        font-size: 1.8rem;
+        font-size: 2rem;
+        margin-top: 20px;
       }
     }
 

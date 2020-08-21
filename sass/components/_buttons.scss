@@ -10,6 +10,9 @@
     color: $color-secondary;
     font-family: "Europa";
     font-weight: normal;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
+    .dot {
+      animation: blink 1s infinite 0ms;
+    }
   }
 }
