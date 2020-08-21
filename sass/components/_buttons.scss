@@ -12,7 +12,14 @@
     font-weight: normal;
     font-size: 2.1rem;
     .dot {
-      animation: blink 1s infinite 0ms;
+      display: inline-block;
+      animation: wave 1.3s linear infinite;
+    }
+    .dot:nth-child(3) {
+      animation-delay: -1.1s;
+    }
+    .dot:nth-child(4) {
+      animation-delay: -0.9s;
     }
   }
 }

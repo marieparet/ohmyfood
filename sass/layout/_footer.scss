@@ -15,4 +15,9 @@ footer {
   .contact-us {
     @include footer-sections;
   }
+
+  a:hover {
+    animation: wiggle 75ms linear;
+    animation-iteration-count: 5;
+  }
 }
