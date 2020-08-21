@@ -14,11 +14,15 @@
         background-clip: text;
         font-size: 3.3rem;
         font-weight: 100;
+        margin: 10px 0 60px 0;
+      }
+
+      #note-enchantee-title {
         margin: 10px 0 0 0;
       }
 
       h3 {
-        font-family: "Segoe Print";
+        font-family: map-get($theme, text-family);
         font-weight: bold;
         margin-top: 60px;
         margin-bottom: 30px;
@@ -32,6 +36,10 @@
           transform: rotate(180deg);
           width: 280px;
         }
+      }
+
+      p {
+        font-family: map-get($theme, text-family);
       }
     }
   }
@@ -58,6 +66,10 @@
     }
   }
 
+  &__footer {
+    padding-bottom: 85px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -65,13 +77,31 @@
     align-items: center;
     width: 90%;
     box-shadow: 0 0 6px #ccc;
-    margin: 0 auto 150px auto;
+    margin: 0 auto 130px auto;
   }
 
   &__content {
     width: 85%;
     text-align: center;
     color: black;
+
+    $colours-menus: (
+      orange: #c67412,
+      purple: #a56799,
+      blue: #6e4ccc,
+      black: black,
+    );
+    @each $name, $value in $colours-menus {
+      &--#{"color-" + $name} {
+        color: $value;
+        p {
+          color: $value;
+        }
+        .underline::after {
+          background-color: $value;
+        }
+      }
+    }
 
     .underline {
       position: relative;
@@ -83,7 +113,6 @@
         width: 0;
         left: 0;
         transition: width 1s ease;
-        background-color: black;
       }
       &:hover::after {
         width: 100%;
@@ -95,7 +124,6 @@
       flex-flow: row nowrap;
       justify-content: space-between;
       font-size: 1.2rem;
-      font-family: "Segoe Print";
       margin: 20px;
 
       .price {
