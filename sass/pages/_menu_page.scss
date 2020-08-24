@@ -12,13 +12,18 @@
         );
         color: transparent;
         background-clip: text;
-        font-size: 3.3rem;
         font-weight: 100;
+        font-size: 3.5rem;
         margin: 10px 0 60px 0;
       }
 
-      #note-enchantee-title {
+      #la-note-title {
         margin: 10px 0 0 0;
+        font-size: 2.9rem;
+      }
+
+      #le-chic-title {
+        font-size: 2.3rem;
       }
 
       h3 {
@@ -26,15 +31,18 @@
         font-weight: bold;
         margin-top: 60px;
         margin-bottom: 30px;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         display: flex;
         justify-content: space-between;
-        .line {
-          width: 280px;
+        align-items: center;
+
+        .line-menu-1,
+        .line-menu-3 {
+          width: 250px;
         }
-        .line-right {
+        .line-menu-1:last-child,
+        .line-menu-2:last-child {
           transform: rotate(180deg);
-          width: 280px;
         }
       }
 
@@ -54,20 +62,20 @@
     align-items: center;
     padding-top: 65px;
     .icon-music {
-      width: 95px;
+      width: 75px;
     }
   }
 
   &__header {
     h1 {
       color: black;
-      font-size: 2.6rem;
+      font-size: 2.2rem;
       text-align: center;
     }
   }
 
   &__footer {
-    padding-bottom: 85px;
+    padding-bottom: 90px;
   }
 
   &__container {
@@ -75,33 +83,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     box-shadow: 0 0 6px #ccc;
-    margin: 0 auto 130px auto;
+    margin: 0 auto 60px auto;
   }
 
   &__content {
     width: 85%;
     text-align: center;
     color: black;
-
-    $colours-menus: (
-      orange: #c67412,
-      purple: #a56799,
-      blue: #6e4ccc,
-      black: black,
-    );
-    @each $name, $value in $colours-menus {
-      &--#{"color-" + $name} {
-        color: $value;
-        p {
-          color: $value;
-        }
-        .underline::after {
-          background-color: $value;
-        }
-      }
-    }
 
     .underline {
       position: relative;
@@ -123,12 +113,40 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 20px;
 
       .price {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
         padding-left: 20px;
+      }
+    }
+
+    $colours-menus: (
+      orange: #c67412,
+      purple: #a56799,
+      blue: #6e4ccc,
+      black: black,
+      dark-blue: #0228dd,
+      medium-blue: #0670f3,
+      light-blue: #229df9,
+      green: #bfff7e,
+    );
+    @each $name, $value in $colours-menus {
+      &--#{"color-" + $name} {
+        color: $value;
+        p {
+          color: $value;
+        }
+        .underline::after {
+          background-color: $value;
+        }
+        .line-menu-1 path,
+        .line-menu-2 path,
+        .line-menu-3 path {
+          fill: $value;
+        }
       }
     }
   }
