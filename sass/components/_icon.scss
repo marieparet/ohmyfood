@@ -1,3 +1,6 @@
 .icon-music {
   width: 60px;
+  @include media-small {
+    width: 50px;
+  }
 }

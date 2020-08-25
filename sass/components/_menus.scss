@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
   max-width: 280px;
+  @include media-small {
+    min-height: 345px;
+    max-width: 250px;
+  }
 }
 
 $menu-themes: (
@@ -83,13 +87,16 @@ $menu-themes: (
         );
         color: transparent;
         -webkit-background-clip: text;
-        margin-bottom: 20px;
+        margin: 20px 0;
         font-size: 1.7rem;
         font-weight: 100;
       }
 
       #chic-title {
         font-size: 1.3rem;
+        @include media-small {
+          font-size: 1.1rem;
+        }
       }
 
       p {
@@ -97,6 +104,9 @@ $menu-themes: (
         color: map-get($theme, text-color);
         font-size: 2rem;
         margin-top: 20px;
+        @include media-small {
+          font-size: 1.7rem;
+        }
       }
     }
 

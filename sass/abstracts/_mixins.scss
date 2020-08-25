@@ -3,6 +3,10 @@
   font-weight: normal;
   font-size: 1.5rem;
   padding: 0 20px;
+  @include media-small {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
 }
 
 @mixin button {
@@ -14,9 +18,19 @@
   font-family: "Europa";
   font-weight: normal;
   font-size: 1.8rem;
+  @include media-small {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+  }
 }
 
 /* Responsive */
+
+$breakpoints: (
+  small: 380px,
+  medium: 900px,
+  large: 1200px,
+);
 
 @mixin media-small {
   @media screen and (max-width: map-get($breakpoints, small)) {
