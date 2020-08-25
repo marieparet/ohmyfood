@@ -3,7 +3,7 @@
     &--#{$name} {
       background-color: map-get($theme, bg);
 
-      h2 {
+      h3 {
         font-family: map-get($theme, title-family);
         background-image: linear-gradient(
           to right,
@@ -21,7 +21,7 @@
         }
       }
 
-      h3 {
+      h4 {
         font-family: map-get($theme, text-family);
         font-weight: bold;
         margin-top: 60px;
@@ -77,10 +77,12 @@
   }
 
   &__header {
-    h1 {
+    h2 {
       color: black;
       font-size: 2.2rem;
       text-align: center;
+      display: inline-block;
+      width: 100%;
       @include media-small {
         font-size: 1.5rem;
       }
