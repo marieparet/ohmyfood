@@ -1,16 +1,16 @@
 .card {
-  min-height: 400px;
-  width: 100%;
-  margin: 20px;
-  padding: 20px;
-  box-shadow: 0 0 6px #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 280px;
+  min-height: 400px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 6px #ccc;
   @include media-small {
-    min-height: 345px;
     max-width: 250px;
+    min-height: 345px;
   }
 }
 
@@ -79,7 +79,10 @@ $menu-themes: (
       background-color: map-get($theme, bg);
 
       h2 {
+        margin: 20px 0;
         font-family: map-get($theme, title-family);
+        font-size: 1.7rem;
+        font-weight: 100;
         background-image: linear-gradient(
           to right,
           map-get($theme, title-color-start),
@@ -87,9 +90,6 @@ $menu-themes: (
         );
         color: transparent;
         -webkit-background-clip: text;
-        margin: 20px 0;
-        font-size: 1.7rem;
-        font-weight: 100;
       }
 
       #chic-title {
@@ -100,10 +100,10 @@ $menu-themes: (
       }
 
       p {
-        font-family: map-get($theme, text-family);
-        color: map-get($theme, text-color);
-        font-size: 2rem;
         margin-top: 20px;
+        font-family: map-get($theme, text-family);
+        font-size: 2rem;
+        color: map-get($theme, text-color);
         @include media-small {
           font-size: 1.7rem;
         }
