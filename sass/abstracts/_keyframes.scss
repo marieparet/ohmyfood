@@ -13,14 +13,16 @@
   }
 }
 
+$wiggle-intensity: 3px;
+
 @keyframes wiggle {
   0% {
-    transform: translateX(3px);
+    transform: translateX($wiggle-intensity);
   }
   50% {
-    transform: translateX(-3px);
+    transform: translateX(-$wiggle-intensity);
   }
   70% {
-    transform: translateX(3px);
+    transform: translateX($wiggle-intensity);
   }
 }
