@@ -1,5 +1,12 @@
 .menu {
   &--la-note-enchantee {
+    h2 {
+      margin: 10px 0 0 0;
+      font-size: 2.9rem;
+      @include media-small {
+        font-size: 2rem;
+      }
+    }
     h3 {
       font-size: 1.4rem;
       @include media-small {
@@ -33,8 +40,17 @@
   }
 
   &--le-chic-a-la-francaise {
+    h2 {
+      font-size: 2.3rem;
+      @include media-small {
+        font-size: 1.3rem;
+      }
+    }
     .line-menu-2 {
       width: 245px;
+      @include media-small {
+        width: 110px;
+      }
     }
   }
 
