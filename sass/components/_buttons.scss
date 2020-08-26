@@ -1,6 +1,5 @@
 .soon-btn {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   padding-bottom: 80px;
   .btn {
     @include button;
@@ -18,8 +17,7 @@
 }
 
 .return-btn {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   padding-bottom: 80px;
   .btn {
     @include button;

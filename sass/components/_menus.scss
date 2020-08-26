@@ -1,6 +1,5 @@
 .card {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   align-items: center;
   width: 100%;
   max-width: 280px;
@@ -8,7 +7,7 @@
   margin: 20px;
   padding: 20px;
   box-shadow: 0 0 6px #ccc;
-  @include media-small {
+  @include media-phone {
     max-width: 250px;
     min-height: 345px;
   }
@@ -94,7 +93,7 @@ $menu-themes: (
 
       #chic-title {
         font-size: 1.3rem;
-        @include media-small {
+        @include media-phone {
           font-size: 1.1rem;
         }
       }
@@ -104,7 +103,7 @@ $menu-themes: (
         font-family: map-get($theme, text-family);
         font-size: 2rem;
         color: map-get($theme, text-color);
-        @include media-small {
+        @include media-phone {
           font-size: 1.7rem;
         }
       }

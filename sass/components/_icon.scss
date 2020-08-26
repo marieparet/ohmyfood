@@ -1,6 +1,6 @@
 .icon-music {
   width: 60px;
-  @include media-small {
+  @include media-phone {
     width: 50px;
   }
 }

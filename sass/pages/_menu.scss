@@ -3,13 +3,13 @@
     h3 {
       margin: 10px 0 0 0;
       font-size: 2.9rem;
-      @include media-small {
+      @include media-phone {
         font-size: 2rem;
       }
     }
     h4 {
       font-size: 1.4rem;
-      @include media-small {
+      @include media-phone {
         font-size: 1rem;
       }
     }
@@ -24,14 +24,14 @@
       p {
         font-family: "Devonshire", "cursive";
         font-size: 2.5rem;
-        @include media-small {
+        @include media-phone {
           font-size: 1.7rem;
         }
       }
       .icon-music {
         width: 50px;
         margin-right: 20px;
-        @include media-small {
+        @include media-phone {
           width: 30px;
           margin-right: 10px;
         }
@@ -42,13 +42,13 @@
   &--le-chic-a-la-francaise {
     h3 {
       font-size: 2.3rem;
-      @include media-small {
+      @include media-phone {
         font-size: 1.3rem;
       }
     }
     .line-menu-2 {
       width: 245px;
-      @include media-small {
+      @include media-phone {
         width: 110px;
       }
     }

@@ -2,25 +2,30 @@
   margin-bottom: 15px;
   padding: 10px 35px;
   border-radius: 15px;
-  font-family: "Europa";
+  font-family: $font-primary;
   font-size: 1.8rem;
   font-weight: normal;
   background-color: $color-primary;
   color: $color-secondary;
-  @include media-small {
+  @include media-phone {
     padding: 10px 20px;
     font-size: 1.4rem;
   }
 }
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 $breakpoints: (
-  small: 380px,
+  phone: 380px,
   medium: 900px,
   large: 1200px,
 );
 
-@mixin media-small {
-  @media screen and (max-width: map-get($breakpoints, small)) {
+@mixin media-phone {
+  @media screen and (max-width: map-get($breakpoints, phone)) {
     @content;
   }
 }

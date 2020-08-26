@@ -13,7 +13,7 @@ footer {
     font-size: 1.5rem;
     font-weight: normal;
     color: $color-secondary;
-    @include media-small {
+    @include media-phone {
       padding: 0 10px;
       font-size: 1.1rem;
     }
