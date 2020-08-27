@@ -3,7 +3,7 @@ header {
   align-items: center;
   height: $header-height;
   background-color: $color-primary;
-  @include media-tablet {
+  @include media-medium {
     height: $header-height-media;
   }
   h1 {
@@ -11,10 +11,10 @@ header {
     font-size: 3.6rem;
     font-weight: bold;
     color: $color-secondary;
-    @include media-tablet {
+    @include media-medium {
       font-size: 3.3rem;
     }
-    @include media-phone {
+    @include media-small {
       font-size: 2.8rem;
     }
   }

@@ -1,9 +1,9 @@
 .icon-music {
   width: 60px;
-  @include media-tablet {
+  @include media-medium {
     width: 55px;
   }
-  @include media-phone {
+  @include media-small {
     width: 50px;
   }
 }

@@ -15,7 +15,7 @@
         font-size: 3.5rem;
         font-family: map-get($theme, title-family);
         font-weight: 100;
-        @include media-phone {
+        @include media-small {
           margin: 10px 0;
           font-size: 2rem;
         }
@@ -31,7 +31,7 @@
         font-family: map-get($theme, text-family);
         font-size: 1.2rem;
         font-weight: bold;
-        @include media-phone {
+        @include media-small {
           margin-top: 30px;
           font-size: 0.9rem;
         }
@@ -39,10 +39,10 @@
         .line-menu,
         .line-menu-3 {
           width: 250px;
-          @include media-tablet {
+          @include media-medium {
             width: 190px;
           }
-          @include media-phone {
+          @include media-small {
             width: 83px;
           }
         }
@@ -68,15 +68,15 @@
     align-items: center;
     text-align: center;
     padding-top: 65px;
-    @include media-phone {
+    @include media-small {
       padding-top: 45px;
     }
     .icon-music {
       width: 75px;
-      @include media-tablet {
+      @include media-medium {
         width: 70px;
       }
-      @include media-phone {
+      @include media-small {
         width: 50px;
       }
     }
@@ -89,7 +89,10 @@
       width: 100%;
       font-size: 2.2rem;
       color: black;
-      @include media-phone {
+      @include media-medium {
+        font-size: 2rem;
+      }
+      @include media-small {
         font-size: 1.5rem;
       }
     }
@@ -97,7 +100,7 @@
 
   &__footer {
     padding-bottom: 90px;
-    @include media-phone {
+    @include media-small {
       padding-bottom: 45px;
     }
   }
@@ -109,10 +112,10 @@
     width: 80%;
     box-shadow: 0 0 6px #ccc;
     margin: 0 auto 60px auto;
-    @include media-tablet {
+    @include media-medium {
       width: 90%;
     }
-    @include media-phone {
+    @include media-small {
       margin: 0 auto 30px auto;
     }
   }
@@ -121,7 +124,7 @@
     text-align: center;
     width: 85%;
     color: black;
-    @include media-tablet {
+    @include media-medium {
       text-align: left;
       width: 90%;
     }
@@ -148,7 +151,7 @@
       flex-flow: row nowrap;
       font-size: 1rem;
       margin: 20px;
-      @include media-phone {
+      @include media-small {
         margin: 20px 0;
         font-size: 0.8rem;
       }
@@ -157,7 +160,7 @@
         padding-left: 20px;
         font-size: 1.1rem;
         font-weight: bold;
-        @include media-phone {
+        @include media-small {
           font-size: 0.8rem;
         }
       }

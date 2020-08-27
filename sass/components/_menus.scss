@@ -7,11 +7,11 @@
   margin: 20px;
   padding: 20px;
   box-shadow: 0 0 6px #ccc;
-  @include media-tablet {
+  @include media-medium {
     max-width: 270px;
     min-height: 345px;
   }
-  @include media-phone {
+  @include media-small {
     max-width: 250px;
     min-height: 315px;
   }
@@ -97,7 +97,7 @@ $menu-themes: (
 
       #chic-title {
         font-size: 1.3rem;
-        @include media-phone {
+        @include media-small {
           font-size: 1.1rem;
         }
       }
@@ -107,7 +107,7 @@ $menu-themes: (
         font-family: map-get($theme, text-family);
         font-size: 2rem;
         color: map-get($theme, text-color);
-        @include media-phone {
+        @include media-small {
           font-size: 1.7rem;
         }
       }
