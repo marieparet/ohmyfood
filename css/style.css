@@ -168,7 +168,7 @@ header h1 {
 .soon-btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 .soon-btn .btn {
   margin-bottom: 15px;
@@ -203,7 +203,7 @@ header h1 {
 .return-btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 .return-btn .btn {
   margin-bottom: 15px;

@@ -1,6 +1,6 @@
 .soon-btn {
   @include flex-center;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   .btn {
     @include button;
     .dot {
@@ -18,7 +18,7 @@
 
 .return-btn {
   @include flex-center;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   .btn {
     @include button;
     transition: transform 450ms, background-color 300ms 150ms;
