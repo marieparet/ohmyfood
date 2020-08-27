@@ -1,5 +1,8 @@
 .icon-music {
   width: 60px;
+  @include media-tablet {
+    width: 55px;
+  }
   @include media-phone {
     width: 50px;
   }

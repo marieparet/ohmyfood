@@ -3,8 +3,8 @@
   padding: 8px 8px calc(8px + #{$footer-height}) 8px;
   min-height: calc(100vh - #{$header-height});
   color: black;
-  @include media-phone {
-    min-height: calc(100vh - #{$header-height-media-phone});
+  @include media-tablet {
+    min-height: calc(100vh - #{$header-height-media});
   }
   h2,
   .effect {
