@@ -125,7 +125,7 @@ footer a {
 }
 @media screen and (max-width: 500px) {
   footer a {
-    padding: 0 10px;
+    padding: 0 15px;
     font-size: 1.1rem;
   }
 }
