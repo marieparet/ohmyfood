@@ -31,6 +31,9 @@
       .icon-music {
         width: 50px;
         margin-right: 20px;
+        @include media-tablet {
+          width: 45px;
+        }
         @include media-phone {
           width: 30px;
           margin-right: 10px;
@@ -48,6 +51,9 @@
     }
     .line-menu-2 {
       width: 245px;
+      @include media-tablet {
+        width: 180px;
+      }
       @include media-phone {
         width: 110px;
       }
