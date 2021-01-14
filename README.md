@@ -1,4 +1,4 @@
-# Energize a web page with CSS animations
+# Creation and energization of a web page with CSS animations
 
 
 ## Getting started
