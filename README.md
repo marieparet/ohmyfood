@@ -22,6 +22,9 @@ I have used SASS, the 7-1 pattern and CSS animations.
 Here is a quick demonstration of the app :  
 [https://youtu.be/UWhbEqdRFlE](https://youtu.be/UWhbEqdRFlE)
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=UWhbEqdRFlE
+" target="_blank"><img src="http://img.youtube.com/vi/UWhbEqdRFlE/0.jpg" 
+alt="Miniature de la présentation vidéo de l'application" width="240" height="180" border="10" /></a>
 
 
 
