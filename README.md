@@ -19,8 +19,7 @@ I have used SASS, the 7-1 pattern and CSS animations.
 
 ## Video presentation
 
-Here is a quick demonstration of the app :  
-[https://youtu.be/UWhbEqdRFlE](https://youtu.be/UWhbEqdRFlE)
+Here is a quick video demonstration of the app :  
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=UWhbEqdRFlE
 " target="_blank"><img src="http://img.youtube.com/vi/UWhbEqdRFlE/0.jpg" 
